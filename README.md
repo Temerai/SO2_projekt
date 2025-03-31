@@ -1,7 +1,38 @@
 # SO2_projekt - 1. Problem Jedzących Filozofów
 ---
 ## Jak uruchomić program?
+### 1. Sklonuj repozytorium projektu
+1. Otwórz wiersz poleceń
+2. Wykonaj następujące komendy:
+```shell
+git clone https://github.com/Temerai/SO2_projekt.git
+cd SO2_projekt
 
+```
+
+### 2. Pobierz i zainstaluj CMake (3.30 lub nowszy)
+### 3. Jeśli nie masz kompilatora (g++), zainstaluj MinGW lub użyj Visual Studio
+### 4. Kompilacja projektu
+W folderze z projektem wykonaj następujace komendy:
+```shell
+cd SO2_Project1
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+
+### 5. Uruchomienie programu
+W celu uruchomienia programu nawiguj do miejsca utworzenia pliku wykonywalnego (np. Debug przy wzkorzystaniu Visual 
+Studio) i wykonaj:
+```shell
+SO2_Project1 <liczba_filozofow>
+```
+W miejsce <liczba_filozofow> wstaw wybraną liczbę filozofów > 1.
+
+---
+## Jak zatrzymac program?
+W aktualnej wersji program działa bez końca. W celu zakończenia działania programu należy użyć skrótu Ctrl+C.
 
 ---
 ## Opis problemu
