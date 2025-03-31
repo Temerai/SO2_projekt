@@ -12,7 +12,11 @@ cd SO2_projekt
 
 ### 2. Pobierz i zainstaluj CMake (3.30 lub nowszy)
 Link --> https://cmake.org/download/
-### 3. Jeśli nie masz kompilatora, zainstaluj MinGW lub użyj Visual Studio
+
+### 3. Kompilator
+Do kompilacji projektu proponuję wykorzystać Visual Studio. Nie jest to wymagane natomiast dalsza część instrukcji 
+to przewiduje. Wykorzystany może zostać dowolny kompilator C++.
+
 ### 4. Kompilacja projektu
 W folderze z projektem wykonaj następujace komendy:
 ```shell
