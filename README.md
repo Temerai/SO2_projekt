@@ -47,13 +47,11 @@ myśli oraz je. Między nimi znajduje się pięć widelców, a każdy filozof po
 i prawej strony), aby móc jeść. 
 
 Na potrzeby zadania program obsługuje wybraną liczbę filozofów (podawaną jako argument przy uruchamianiu). Liczba 
-widelców równa jest 
-wybranej liczbie filozofów.
+widelców równa jest wybranej liczbie filozofów.
 
 ### Wyzwania
 - Unikanie zakleszczenia (deadlock) – sytuacji, w której każdy filozof trzyma jeden widelec i czeka na drugi, co 
 prowadzi do zablokowania się wszystkich.
-- Unikanie zagłodzenia (starvation) – sytuacji, w której niektóry filozof nigdy nie dostaje obu widelców.
 - Zapewnienie poprawnej synchronizacji – aby filozofowie mogli jeść i myśleć w sposób zgodny z regułami.
 
 ---
@@ -64,5 +62,5 @@ prowadzi do zablokowania się wszystkich.
 ---
 ## Sekcje krytyczne i synchronizacja
 - Każdy widelec jest chroniony przez std::mutex.
-- Aby uniknąć deadlocka, filozofowie parzysti podnoszą lewy widelec najpierw, a nieparzysti prawy.
+- Aby uniknąć deadlocka, filozofowie parzyści podnoszą najpierw lewy widelec, a nieparzyści prawy.
 - Każdy filozof myśli i je przez losowy czas (1000-3000 ms).
